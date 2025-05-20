@@ -23,7 +23,8 @@ loop:
 done:
 	LDR R0, =result @ Dirección para gaurdar el resultado
 	STR R2, [R0] @ Guardar el resultado en memoria
-	
-	B done
+
+halt:
+	B halt
 	
 	
